@@ -1,3 +1,5 @@
+import 'package:day14/pages/home/homePage.dart';
+import 'package:day14/pages/userSession/registerPage.dart';
 import 'package:day14/styles/Animation/FadeAnimation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -65,7 +67,6 @@ class LoginPage extends StatelessWidget {
                                 padding: EdgeInsets.all(10),
                                 decoration: BoxDecoration(
                                     border: Border(bottom: BorderSide(color: Colors.grey[200]), right: BorderSide(width: 15, color: Colors.white), left:  BorderSide(width: 15, color: Colors.white)),
-
                                 ),
                                 child: TextField(
                                   decoration: InputDecoration(
@@ -95,19 +96,35 @@ class LoginPage extends StatelessWidget {
                           ),
                         )),
                         SizedBox(height: 40,),
-                        FadeAnimation(1.5, Text("Olvidaste tu contraseña?", style: TextStyle(color: Colors.grey),)),
+                        FadeAnimation(1.5, TextButton(
+                          child: Text("Registrate", style:
+                          TextStyle(color: Colors.grey,
+                              fontWeight: FontWeight.bold,
+                          ),
+                          ),
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute( builder: (context) => RegisterPage()));
+                          },
+                        ),),
+
+                        SizedBox(height: 20,),
+                        FadeAnimation(1.6, TextButton(
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(Colors.deepPurple[900])
+                          ),
+                          child: Text("Login", style:
+                            TextStyle(color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          onPressed: () {
+                              Navigator.push(context,
+                                  MaterialPageRoute( builder: (context) => HomePage()));
+                          },
+                        ),),
                         SizedBox(height: 40,),
-                        FadeAnimation(1.6, Container(
-                          height: 50,
-                          margin: EdgeInsets.symmetric(horizontal: 50),
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(50),
-                              color: Colors.deepPurple[900]
-                          ),
-                          child: Center(
-                            child: Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
-                          ),
-                        )),
+                        FadeAnimation(1.5, Text("Olvidaste tu contraseña?", style: TextStyle(color: Colors.grey),)),
                       ],
                     ),
                   ),

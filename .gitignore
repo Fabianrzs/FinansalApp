@@ -1,0 +1,25 @@
+
+.dart_tool/chrome-device/Default/Affiliation Database
+.dart_tool/chrome-device/Default/Affiliation Database-journal
+.dart_tool/chrome-device/Default/AutofillStrikeDatabase/LOCK
+.dart_tool/chrome-device/Default/AutofillStrikeDatabase/LOG
+.dart_tool/chrome-device/Default/BudgetDatabase/LOCK
+.dart_tool/chrome-device/Default/BudgetDatabase/LOG
+.dart_tool/chrome-device/Default/coupon_db/LOCK
+.dart_tool/chrome-device/Default/coupon_db/LOG
+.dart_tool/chrome-device/Default/Download Service/EntryDB/LOCK
+.dart_tool/chrome-device/Default/Download Service/EntryDB/LOG
+*.log
+.dart_tool/chrome-device/Default/Extension Scripts/CURRENT
+.dart_tool/chrome-device/Default/Extension Scripts/LOCK
+.dart_tool/chrome-device/Default/Extension Scripts/LOG
+.dart_tool/chrome-device/Default/Extension Scripts/MANIFEST-000001
+.dart_tool/chrome-device/Default/Extension State/CURRENT
+.dart_tool/chrome-device/Default/Extension State/LOCK
+*.dill
+*.dill
+build/dd37b6c7362649b647a6dfcdb3487143/_composite.stamp
+build/dd37b6c7362649b647a6dfcdb3487143/gen_dart_plugin_registrant.stamp
+build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill
+build/dd37b6c7362649b647a6dfcdb3487143/gen_localizations.stamp
+build/4f2a58af27abc49ecf55570043bbf938.cache.dill.track.dill
